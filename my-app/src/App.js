@@ -10,6 +10,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Login from './pages/Auth/Login';
 import Register from './pages/Auth/Register';
+import Huy from './pages/Huy/Huy';
 
 const Layot = () => {
   return(
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path:"/",
         element:<Home/>,
+      },
+      {
+        path:"/huy",
+        element:<Huy/>,
       },
     ]
   },
