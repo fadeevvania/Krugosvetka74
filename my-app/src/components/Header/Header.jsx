@@ -13,7 +13,9 @@ const Header = () => {
                     <Link to="/"><img src={Logo} alt="" /></Link>
                 </div>
                 <div className="info">
-                    <p>площадь Революции,г.Челябинск</p>
+                   <div className="icc">
+                   <p>площадь Революции,г.Челябинск</p>
+                    </div> 
                     <div className="icons">
                         <img className='icon' src={OK} alt="" />
                         <img className='icon' src={VK} alt="" />
