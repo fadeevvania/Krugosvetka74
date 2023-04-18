@@ -3,6 +3,7 @@
     height: 439px;
     width: 100%;
     .container{
+        align-items: center;
         display: flex;
         justify-content: space-evenly;
         .logo{
@@ -16,7 +17,9 @@
                 transform: scale(1.02);
             }
         }
-        h5{
+        li{
+            list-style: none;
+            line-height: 45px;
             font-size: 24px;
             font-weight: bold;
             color: white;

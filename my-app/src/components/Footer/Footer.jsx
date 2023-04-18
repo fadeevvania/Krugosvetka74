@@ -13,26 +13,26 @@ const Footer = () => {
           <img src={Logo} alt="" />
         </div>
         <Link className='link' to="/">
-          <h5>Маршруты</h5>
+          <li>Маршруты</li>
         </Link>
         <div className="">
           <Link className='link' to="/">
-            <h5>О нас</h5>
+            <li>О нас</li>
           </Link><Link className='link' to="/">
-            <h5>Статьи</h5>
+            <li>Статьи</li>
           </Link><Link className='link' to="/">
-            <h5>Контакты</h5>
+            <li>Контакты</li>
           </Link>
         </div>
         <div className="">
           <Link className='link' to="/">
-            <h5>Профиль</h5>
+            <li>Профиль</li>
           </Link>
           <Link className='link' to="/">
-            <h5>Корзина</h5>
+            <li>Корзина</li>
           </Link>
           <Link className='link' to="/">
-            <h5>Избранное</h5>
+            <li>Избранное</li>
           </Link>
         </div>
         <div className="icons">
