@@ -12,20 +12,27 @@
         display: flex;
         align-items: center;
         box-shadow: 1px 8px 10px -7px rgba(0, 0, 0, 0.2);
+        justify-content: space-between;
         .logo {
-            width: 40%;
+            width: 30%;
             display: flex;
             justify-content: center;
+            
         }
         .info {
-            width: 60%;
+            width: 52%;
             display: flex;
             align-items: center;
-            justify-content:space-evenly;
-            padding-left: 4.5%;
+            justify-content: space-around;
+
             .icons {
                 display: flex;
-                gap: 20px;    
+                gap: 20px;
+                :hover {
+                   
+                  transform: scale(1.02);
+                   
+                }
                 .icon {
                     width: 50px;
                     height: 50px;
@@ -40,6 +47,12 @@
         align-items: center;
         height: 86px;
         margin: 0;
+        position: absolute;
+        display: flex;
+        gap: 100px;
+        left: 0;
+        right: 0;
+        color: white;
         li {
             list-style: none;
             text-decoration: none;
@@ -47,7 +60,7 @@
             font-weight: bold;
         }
         :hover {
-            color: #2d64a1;
+            color: #E6641B;
             transform: scale(1.02);
         }
     }

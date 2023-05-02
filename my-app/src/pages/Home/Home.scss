@@ -1,4 +1,60 @@
-.Home{
+@mixin button() {
+}
+
+.Home {
     width: 100%;
-    height: 500px;
+    height: 2000px;
+    .link {
+        text-decoration: none;
+        color: inherit;
+    }
+    .container {
+        .travel {
+            background-image: url(../../img/LES.jpg);
+            background-size: cover;
+            height: 1200px;
+            border-bottom-left-radius: 100% 250px;
+            border-bottom-right-radius: 100% 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            h1 {
+                font-weight: 700px;
+                font-size: 128px;
+            }
+            p {
+                font-weight: 400;
+                font-size: 40px;
+            }
+            .btn {
+                margin-top: 54px;
+                :hover {
+                    background-color: #fadf55;
+                    color: black;
+                    transform: scale(1.02);
+                    transition: 3s;
+                }
+            }
+            .button {
+                all: unset;
+                height: 62px;
+                width: 323px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 65px;
+                background-color: #e6641b;
+                font-size: 24px;
+                color: white;
+                cursor: pointer;
+            }
+            
+        }
+        .dropdown{
+            width: 1620px;
+
+        }
+    }
 }
