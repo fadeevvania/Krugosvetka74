@@ -3,18 +3,19 @@
 
 .Home {
     width: 100%;
-    height: 2000px;
+    min-height: 100%;
+    
     .link {
         text-decoration: none;
         color: inherit;
     }
     .container {
         .travel {
-            background-image: url(../../img/LES.jpg);
+            background-image: url(../../img/back.png);
             background-size: cover;
             height: 1200px;
-            border-bottom-left-radius: 100% 250px;
-            border-bottom-right-radius: 100% 250px;
+            border-bottom-left-radius: 100%  800px;
+            border-bottom-right-radius: 100% 800px;
             display: flex;
             flex-direction: column;
             justify-content: center;

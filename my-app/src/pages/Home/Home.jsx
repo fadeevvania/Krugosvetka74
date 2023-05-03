@@ -1,10 +1,14 @@
 import React, { useState } from 'react'
 import './Home.scss'
 import { Link } from 'react-router-dom';
-import Filter from '../../components/Filter/Filter';
+import InputWIthSearch from '../../components/Filter/InputWIthSearch';
+import Section from '../../components/Sections/Section';
+import Gallery from '../../components/Gallery/Gallery';
+import Reviews from '../../components/Reviews/Reviews';
+import Feedback from '../../components/Feedback/Feedback';
 
 const Home = () => {
-  const [selected,setSelected] = useState("");
+  const [selected, setSelected] = useState("");
   return (
     <div className='Home'>
       <div className="container">
@@ -15,9 +19,11 @@ const Home = () => {
             <Link className='link' to="/"><button className='button'>Забронировать тур</button></Link>
           </div>
         </div>
-        <div className="dropdown">
-          <Filter selected={selected} setSelected={setSelected}/>
-        </div>
+        <InputWIthSearch />
+        <Section />
+        <Gallery />
+        <Reviews />
+        <Feedback />
       </div>
     </div>
   )

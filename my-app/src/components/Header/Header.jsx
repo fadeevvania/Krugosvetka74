@@ -17,8 +17,6 @@ const Header = () => {
                     <div className="icons">
                     <a href="https://ok.ru" target='_blank'><img className='icon' src={OK} alt="" /></a>
                     <a href="https://vk.com/"  target='_blank' ><img className='icon' src={VK} alt="" /></a>
-
-                  
                     </div>
                 </div>
             </div>
