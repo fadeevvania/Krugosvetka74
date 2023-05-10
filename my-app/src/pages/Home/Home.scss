@@ -1,10 +1,4 @@
-@mixin button() {
-}
-
 .Home {
-    width: 100%;
-    min-height: 100%;
-    
     .link {
         text-decoration: none;
         color: inherit;
@@ -14,7 +8,7 @@
             background-image: url(../../img/back.png);
             background-size: cover;
             height: 1200px;
-            border-bottom-left-radius: 100%  800px;
+            border-bottom-left-radius: 100% 800px;
             border-bottom-right-radius: 100% 800px;
             display: flex;
             flex-direction: column;
@@ -24,6 +18,7 @@
             h1 {
                 font-weight: 700px;
                 font-size: 128px;
+                color: white;
             }
             p {
                 font-weight: 400;
@@ -51,11 +46,20 @@
                 color: white;
                 cursor: pointer;
             }
-            
+            @media screen and (max-width: 1200px) {
+                text-align: center;
+            }
         }
-        .dropdown{
+        .dropdown {
             width: 1620px;
-
         }
+    }
+}
+.components {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    .componentz {
+        grid-column-start: 2;
+        grid-column-end: 14;
     }
 }

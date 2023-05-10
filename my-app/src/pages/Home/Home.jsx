@@ -19,12 +19,16 @@ const Home = () => {
             <Link className='link' to="/"><button className='button'>Забронировать тур</button></Link>
           </div>
         </div>
-        <InputWIthSearch />
-        <Section />
-        <Gallery />
-        <Reviews />
-        <Feedback />
       </div>
+        <div className="components">
+          <div className="componentz">
+          <InputWIthSearch />
+          <Section />
+          <Gallery />
+          <Reviews />
+          <Feedback />
+          </div>
+        </div>
     </div>
   )
 }
