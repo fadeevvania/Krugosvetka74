@@ -13,36 +13,35 @@ const Footer = () => {
         <div className="Logo">
         <Link to="/"><img src={Logo} alt="" /></Link>
         </div>
-        <Link className='link' to="/">
+        <Link className='link' to="/routes">
           <li>Маршруты</li>
         </Link>
         <div className="">
-          <Link className='link' to="/">
+          <Link className='link' to="/about">
             <li>О нас</li>
           </Link>
           <Link className='link' to="/article">
             <li>Статьи</li>
           </Link>
-          <Link className='link' to="/">
+          <Link className='link' to="/contacts">
             <li>Контакты</li>
           </Link>
         </div>
         <div className="">
-          <Link className='link' to="/">
+          <Link className='link' to="/profile">
             <li>Профиль</li>
           </Link>
-          <Link className='link' to="/">
+          <Link className='link' to="/basket">
             <li>Корзина</li>
           </Link>
-          <Link className='link' to="/">
+          <Link className='link' to="/favourite">
             <li>Избранное</li>
           </Link>
         </div>
         <div className="icons">
-          <img className='icon' src={OK} alt="" />
-          <img className='icon' src={VK} alt="" />
-          <img className='icon' src={TG} alt="" />
-        </div>
+                        <a href="https://vk.com/" target='_blank' ><img className='icon' src={VK} alt="" /></a>
+                        <a href="https://ok.ru" target='_blank'><img className='icon' src={OK} alt="" /></a>
+                        <a href="https://web.telegram.org/k/#@tavrida_che" target='_blank' ><img className='icon' src={TG} alt="" /></a>        </div>
       </div>
     </div>
   )

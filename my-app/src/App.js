@@ -11,11 +11,26 @@ import Footer from './components/Footer/Footer';
 import Login from './pages/Auth/Login';
 import Register from './pages/Auth/Register';
 import Article from './pages/Article/Article';
-
-const Layot = () => {
+import Favorite from './pages/Favorite/Favorite';
+import About from './pages/About/About';
+import Profile from './pages/Profile/Profile';
+import Routes from './pages/Routes/Routes';
+import Contacts from './pages/Contacts/Contacts';
+import Basket from './pages/Basket/Basket';
+import Header2 from './components/Header/Header2';
+const LayotHome = () => {
   return(
     <>
     <Header/>
+    <Outlet/>
+    <Footer/>
+    </>
+  );
+};
+const Layot = () => {
+  return(
+    <>
+    <Header2/>
     <Outlet/>
     <Footer/>
     </>
@@ -25,25 +40,53 @@ const Layot = () => {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layot/>,
+    element: <LayotHome/>,
     children:[
       {
         path:"/",
         element:<Home/>,
       },
+    ],},
+    {path: "/",
+    element: <Layot/>,
+    children:[
       {
         path:"/article",
         element:<Article/>,
       },
+      {
+        path: "/register",
+        element: <Register />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/routes",
+        element: <Routes />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/profile",
+        element: <Profile />,
+      },
+      {
+        path: "/favourite",
+        element: <Favorite />,
+      },
+      {
+        path: "/contacts",
+        element: <Contacts />,
+      },
+      {
+        path: "/basket",
+        element: <Basket/>,
+      },
     ]
-  },
-  {
-    path: "/register",
-    element: <Register />,
-  },
-  {
-    path: "/login",
-    element: <Login />,
   },
 ])
 

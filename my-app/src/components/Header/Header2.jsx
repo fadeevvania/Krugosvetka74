@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 import Logo from '../../img/logo.png'
 import OK from '../../img/OK.png';
 import VK from '../../img/VK.png';
-import './Header.scss'
-const Header = () => {
+import './Header2.scss'
+const Header2 = () => {
     return (
-        <div className='Header'>
+        <div className='Header2'>
             <div className="container">
                 <div className="logo">
                     <Link to="/"><img src={Logo} alt="" /></Link>
@@ -46,4 +46,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Header2

@@ -1,6 +1,6 @@
-.Header {
-    width: 100%;
-    p {
+.Header2 {
+    
+        p {
         font-size: 24px;
     }
     .link {
@@ -43,15 +43,15 @@
     }
     .links {
         display: flex;
-        justify-content: space-evenly; 
+        justify-content: space-evenly;
+       background: white;
         align-items: center;
         height: 86px;
         margin: 0;
-        position: absolute;
         gap: 100px;
         left: 0;
         right: 0;
-        color: white;
+        color: black;
         :hover {
             color: #E6641B;
             transform: scale(1.02);
