@@ -89,19 +89,18 @@
         padding-left: 30px;
         padding-bottom: 5px;
     }
-
     .btn {
+        :hover {
+                background-color: #fadf55;
+                color: black;
+                transform: scale(1.02);
+                transition: 3s;
+            }
         grid-column-start: 21;
         grid-column-end: 26;
         grid-row-start: 9;
         grid-row-end: 2;
         margin-top: 35px;
-        :hover {
-            background-color: #fadf55;
-            color: black;
-            transform: scale(1.02);
-            transition: 3s;
-        }
         .button {
             all: unset;
             height: 62px;
@@ -114,6 +113,7 @@
             font-size: 24px;
             color: white;
             cursor: pointer;
+            
         }
     }
 }

@@ -26,7 +26,7 @@ const Home = () => {
           <Section />
           <Gallery />
           <Reviews />
-          <Feedback />
+          <Feedback/>
           </div>
         </div>
     </div>

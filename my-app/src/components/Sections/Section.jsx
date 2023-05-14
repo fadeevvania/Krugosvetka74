@@ -11,7 +11,7 @@ const Section = () => {
 
 
       <div className="first">
-       <Link className='link' to="/"><div className="Relaxx ArticleWindowsChildd">
+       <Link className='link' to="/article"><div className="Relaxx ArticleWindowsChildd">
           <p className='ArticleWindowsRelaxTextt'>Где отдохнуть в зимние выходные?</p>
         </div>
         </Link> 
@@ -19,14 +19,14 @@ const Section = () => {
 
 
       <div className="second">
-        <Link className='link' to="/"><div className="Boots ArticleWindowsChildd">
+        <Link className='link' to="/article"><div className="Boots ArticleWindowsChildd">
           <p className='ArticleWindowsBootsText'>Фестиваль Уральские валенки в г. Куса</p>
         </div>
         </Link> 
       </div>
 
       <div className="third">
-       <Link className='link' to="/"> <div className="Food ArticleWindowsChildd">
+       <Link className='link' to="/article"> <div className="Food ArticleWindowsChildd">
           <p className='ArticleWindowsFoodText'>Музей пельменя г. Миасс</p>
         </div>
         </Link> 

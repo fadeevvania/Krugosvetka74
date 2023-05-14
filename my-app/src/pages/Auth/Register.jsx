@@ -31,11 +31,19 @@ const Register = () => {
   return (
     <div className="auth">
       <form action="#" className="form" onSubmit={handleFormSubmit}>
-        <InputMask mask="+7 (999) 999-99-99" placeholder="Тел." className="INPUTMASK"></InputMask>
-        <input id="p1" type="password" placeholder="пароль" value={password1} onChange={handlePassword1Change} />
-        <input id="p2" type="password" name="password" placeholder="пароль еще раз" value={password2} onChange={handlePassword2Change} />
+        <h1>Регистрация</h1>
+        <h4>Телефон</h4>
+        <InputMask mask="+7 (999) 999-99-99"  className="INPUTMASK"></InputMask>
+        <h4>Пароль</h4>
+        <input id="p1" type="password" value={password1} onChange={handlePassword1Change} />
+        <h4>Повторите пароль</h4>
+        <input id="p2" type="password" name="password" p="пароль еще раз" value={password2} onChange={handlePassword2Change} />
         {matchError && <p className="error">Пароли не совпадают</p>}
-        <button type="submit">Отправить</button>
+        <div className="btn">
+        <button type="submit">Зарегистрироваться</button>
+        </div>
+        <h3>Регистрируясь, вы соглашаетесь <br/>
+с Политикой конфиденциальности</h3>
       </form>
     </div>
   );
